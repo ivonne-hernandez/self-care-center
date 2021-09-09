@@ -4,5 +4,77 @@ light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000;
-*/
+black - #000000; */
+
+
+body {
+  background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  text-align: center;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 22px;
+  font-weight: 540;
+  height: 70px;
+}
+
+.header {
+  color: white;
+  font-size: 16px;
+  font-weight: 545;
+  line-height: 2.0;
+  margin: 0;
+}
+
+.selectMessageType {
+  background-color: white;
+  color: black;
+  font-style: italic;
+  border-radius: 5px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  width: 35%;
+  margin: auto;
+}
+
+label {
+  font-weight: 300;
+}
+
+#mantra {
+  margin-left: 70px;
+}
+
+.receive-msg {
+  background-color: #134d71;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  line-height: 20.0;
+}
+
+.radio-container {
+  justify-self: center;
+}
+
+.message-container {
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 35px;
+  border: 500px;
+  padding-top: 35px;
+  border-radius: 5px;
+  background-color: white;
+}
