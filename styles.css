@@ -17,64 +17,77 @@ body {
 h1 {
   color: white;
   font-size: 22px;
-  font-weight: 540;
+  font-weight: 549;
   height: 70px;
 }
 
 .header {
   color: white;
   font-size: 16px;
-  font-weight: 545;
+  font-weight: 549;
   line-height: 2.0;
   margin: 0;
 }
 
-.selectMessageType {
+.select-message-type {
   background-color: white;
+  border-radius: 5px;
   color: black;
   font-style: italic;
-  border-radius: 5px;
+  margin: auto;
   padding-bottom: 7px;
   padding-top: 7px;
-  width: 35%;
-  margin: auto;
+  width: 30%;
+
 }
 
 label {
   font-weight: 300;
 }
 
-#mantra {
+.mantra {
   margin-left: 70px;
 }
 
 .receive-msg {
   background-color: #134d71;
-  color: white;
   border-radius: 5px;
+  border: 6px solid #134d71;
+  color: white;
   margin-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .image {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 100px;
   line-height: 20.0;
 }
 
 .radio-container {
   justify-self: center;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+.hidden {
+  display: none!important;
 }
 
 .message-container {
-  width: 50%;
+  background-color: white;
+  border: 11px solid white;
+  border-radius: 8px;
   height: 50px;
   margin: auto;
   margin-top: 50px;
-  padding-bottom: 35px;
-  border: 500px;
-  padding-top: 35px;
-  border-radius: 5px;
-  background-color: white;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  width: 50%;
+}
+
+.message {
+  color: black;
+  font-size: 18px;
 }
