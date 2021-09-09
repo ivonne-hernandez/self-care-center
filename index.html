@@ -10,19 +10,22 @@
     <h2 class="header">
       Which type of message?
     </h2>
-    <article class="selectMessageType">
+    <form class="select-message-type">
         <div class="radio-container">
-          <input type="radio" id="affirmation" name="message" value="affirmation" checked>
+          <input type="radio" class="affirmation" id="affirmation" name="message" value="affirmation">
           <label for="affirmation">affirmation</label>
-          <input type="radio" id="mantra" name="message" value="mantra" checked>
+          <input type="radio" class="mantra" id="mantra" name="message" value="mantra">
           <label for="mantra">mantra</label>
         </div>
-        <button class="receive-msg">
+        <button type="receive-message" class="receive-msg">
           Receive Message
         </button>
-    </article>
+    </form>
     <article class="message-container">
       <img class="image" src="./assets/meditate.svg" alt="meditation icon"/>
+      <p class="message hidden">
+        Message goes here!
+      </p>
     </article>
     <script type="text/javascript" src="main.js"></script>
   </body>
