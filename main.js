@@ -2,6 +2,7 @@ var affirmationRadio = document.querySelector('#affirmation');
 var mantraRadio = document.querySelector('#mantra');
 var receiveMessageButton = document.querySelector('.receive-button');
 var iDontLikeThisMessageButton = document.querySelector('.delete-button');
+var clearMessageButton = document.querySelector('.clear-message');
 var meditationImage = document.querySelector('.image');
 var messageDisplay = document.querySelector('.message');
 
@@ -14,6 +15,7 @@ var arrayOfCurrentMessage;
 
 receiveMessageButton.addEventListener('click', receiveRandomMessage);
 iDontLikeThisMessageButton.addEventListener('click', deleteMessage);
+clearMessageButton.addEventListener('click', clearMessageDisplay);
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -48,6 +50,7 @@ function deleteMessage() {
     messageDisplay.classList.add('italicized-red');
     messageDisplay.innerText = `Message was deleted.`;
     iDontLikeThisMessageButton.classList.add('hidden');
+    clearMessageButton.classList.add('hidden');
   }
 }
 
@@ -63,10 +66,18 @@ function displayMessage() {
   messageDisplay.classList.remove('italicized-red');
   messageDisplay.classList.remove('hidden');
   iDontLikeThisMessageButton.classList.remove('hidden');
+  clearMessageButton.classList.remove('hidden');//
 }
 
 function displayEmptyArrayError() {
   iDontLikeThisMessageButton.classList.add('hidden');
   messageDisplay.classList.add('italicized-red');
   messageDisplay.innerText = `Oh no! There are no more messages of this type.`;
+}
+
+function clearMessageDisplay() {
+  meditationImage.classList.remove('hidden');
+  messageDisplay.classList.add('hidden');
+  iDontLikeThisMessageButton.classList.add('hidden');
+  clearMessageButton.classList.add('hidden');
 }
