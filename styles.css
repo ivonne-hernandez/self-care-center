@@ -1,23 +1,14 @@
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
-black - #000000; */
-
-
 body {
   background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
-  text-align: center;
-  height: 100vh;
   font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  text-align: center;
 }
 
-h1 {
+.title {
   color: white;
-  font-size: 22px;
   font-weight: 549;
+  font-size: 22px;
   height: 70px;
 }
 
@@ -38,10 +29,10 @@ h1 {
   padding-bottom: 7px;
   padding-top: 7px;
   width: 30%;
-
+  height: 105px;
 }
 
-label {
+.radio-label {
   font-weight: 300;
 }
 
@@ -49,35 +40,40 @@ label {
   margin-left: 70px;
 }
 
-.receive-msg {
+.button {
   background-color: #134d71;
   border-radius: 5px;
   border: 6px solid #134d71;
   color: white;
-  margin-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 6px #777777;
+}
+
+.receive-button {
+  margin-top: 50px;
+}
+
 .image {
-  height: 70px;
+  height: 80px;
   width: 100px;
-  line-height: 20.0;
 }
 
 .radio-container {
   justify-self: center;
-  margin-top: 1%;
-  margin-bottom: 5%;
 }
 
 .hidden {
-  display: none!important;
+  display: none;
 }
 
 .message-container {
   background-color: white;
-  border: 11px solid white;
+  border: 30px solid white;
   border-radius: 8px;
   height: 50px;
   margin: auto;
@@ -90,4 +86,15 @@ label {
 .message {
   color: black;
   font-size: 18px;
+}
+
+.delete-button {
+  margin-top: 8px;
+}
+
+.italicized-red {
+  color: red;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 18px;
 }
