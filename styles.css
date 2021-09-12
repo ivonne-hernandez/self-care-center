@@ -71,7 +71,7 @@ body {
   display: none;
 }
 
-.message-container {
+article {
   background-color: white;
   border: 30px solid white;
   border-radius: 8px;
@@ -97,4 +97,13 @@ body {
   font-size: 18px;
   font-style: italic;
   margin-top: 18px;
+}
+
+.user-message {
+  width: 65%;
+  height: 40%;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 12px;
+  text-align: center;
 }
