@@ -7,29 +7,45 @@
   </head>
   <body>
     <h1 class="title">✨ Self Care Center ✨</h1>
-    <h2 class="header">
-      Which type of message?
-    </h2>
+    <h2 class="header">Which type of message?</h2>
     <form class="select-message-type">
         <div class="radio-container">
           <input type="radio" class="affirmation" id="affirmation" name="message" value="affirmation">
-          <label for="affirmation" class="radio-label">affirmation</label>
+          <label for="affirmation" class="radio-label">
+            affirmation
+          </label>
           <input type="radio" class="mantra" id="mantra" name="message" value="mantra">
-          <label for="mantra" class="radio-label">mantra</label>
+          <label for="mantra" class="radio-label">
+            mantra
+          </label>
         </div>
-        <button type="receive-message" class="receive-button button">
+        <button class="receive-button button">
           Receive Message
+        </button>
+        <button class="add-message button">
+          Add Message
         </button>
     </form>
     <article class="message-container">
       <img class="image" src="./assets/meditate.svg" alt="meditation icon"/>
       <p class="message hidden"></p>
-      <button type="delete-message" class="delete-button hidden button">
+      <button class="delete-button hidden button">
         I don't like this message
       </button>
-      <button type="clear-message" class="clear-message hidden button">
+      <button class="clear-message hidden button">
         Clear
       </button>
+    </article>
+    <article class="user-form-container hidden">
+      <input type="text" class="user-message message" id="user-message" placeholder="Type your message here"/>
+      <div>
+        <button class="submit-affirmation button">
+          Submit affirmation
+        </button>
+        <button class="submit-mantra button">
+          Submit mantra
+        </button>
+      </div>
     </article>
     <script type="text/javascript" src="main.js"></script>
   </body>
